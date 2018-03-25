@@ -19,8 +19,7 @@ class ViewController: UIViewController {
                 if convertedValue % 2 == 0 {
                     let alert = UIAlertController(title: "제목", message: "이건 짝수!", preferredStyle: .alert)
                     
-                    let ok = UIAlertAction(title: "OK", style: .default, handler: { action in self.inputField.text = nil})
-                    //팝업이 뜨고 나서 텍스트를 지움.
+                    let ok = UIAlertAction(title: "OK", style: .default, handler: { action in self.inputField.text = nil}) //팝업이 뜨고 나서 텍스트를 지움.
                     alert.addAction(ok)
                     
                     present(alert, animated: true, completion: nil)
@@ -31,9 +30,7 @@ class ViewController: UIViewController {
                     alert.addAction(ok)
                     
                     present(alert, animated: true, completion: nil)
-                    
                 }
-                
             } else {
                 let alert = UIAlertController(title: "제목", message: "이건 문자열!", preferredStyle: .alert)
                 
